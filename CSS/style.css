@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   background-image: url('../IMG/espacio2.png');
+}
+.header{
+    background-image:url('../IMG/fondo.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -450px ;
+    width: 100%;
+    height: 350px;
+    opacity: 0.3;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.main{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+     display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.finder-character{
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-family: 'Delicious Handrawn', cursive;
+    text-align: center;
+
+    color: white;
+    background-color: #201a1a;
+}
+ 
+
+.main h1{
+    font-size: 5rem;
+    font-family: 'Delicious Handrawn', cursive;
+    text-shadow: 0 0 15px #ffff00;    
+    color: #00ffff;
+    animation:  title 4s infinite;
+    text-decoration: underline;
+}
+
+.container-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-character{
+    border: 3px solid #cece2d;
+    box-shadow:  0 0 30px #00ffff;
+    border-radius:10px ;
+    width: 350px;
+    height: 230px;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin: 25px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: #201a1a;
+    transition:  all 0.5s;
+}
+
+.card-character:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+
+}
+.card-character img{
+    width: 190px;
+    border: solid 3px black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.description-card{
+    text-align: center;
+    padding: 5px;
+}
+
+.description-card h2{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #043a3a;
+    color: white;
+    padding: 2px;
+}
+
+.description-card p{
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.footer{
+    width: 100%;
+    height: 5rem;
+    background-color: #03275e96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    color: #201a1a;
+}
+
+.footer a{
+    font-size: 5rem;
+    font-family: 'Delicious Handrawn', cursive;
+    text-shadow: 0 0 15px #ffff00;    
+    color: #00ffff;
+    animation:  title 4s infinite;
+    letter-spacing: 1px;
+}
+
+@keyframes title{
+    50%{
+        text-shadow: 0 0 15px 00ffff ;    
+        color: #ffff00;
+    }
+}
+
+
